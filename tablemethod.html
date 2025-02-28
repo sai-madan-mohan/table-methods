@@ -5,22 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables</title>
     <style>
-        table {
-            width:50%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            text-align: center;
-
+        table  {
+            border: 1px solid black;
+            border-radius: 10px;
+width: 50%;
         }
        
         tr:nth-child(even){
             background:beige;
         }
+
+        th, td {
+            text-align: center;
+            border: 1px solid black;
+            border-radius :10px ;
+            border-style: dotted;
+        }
             
     </style>
 </head>
 <body>
-    <h2>Simple Table</h2>
+    <h2 style="text-align: center;">Simple Table</h2><hr>
     <table border="1">
         <tr>
             <th>ID</th>
@@ -57,7 +62,8 @@
                 <button class="btn delete
                 ">Delete</button>
                 </td>
-    </table>  
+        </tr>
+    </table> <br><hr> 
     <form>
         <label for="name">Name:</label>
         <input type="text" name="name" id="name" placeholder="Enter Name"><br><br>
